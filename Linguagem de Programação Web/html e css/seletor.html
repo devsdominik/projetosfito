@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Seletor Descendente CSS</title>
+    <style>
+      div p {
+        /*Seleciona todos os elementos <p> dentro dos elementos <div> */
+        background-color: #f5deb3;
+      }
+      div > p {
+        /*Seleciona todos os elementos <p>, nos quais, o pai é um elemento <div> */
+        border: solid 1px #f5c8aa;
+      }
+      div + p {
+        /*Seleciona todos os elementos <p> que são colocados imediatamente após os elementos <div> */
+        background-color: #f1b197;
+      }
+      div ~ p {
+        /*Seleciona todos os elementos <p> precedidos por um elemento <div> */
+        border: solid 3px #eb8a83;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>Este parágrafo está dentro da tag div.</p>
+      <p>Este parágrafo também está dentro da tag div.</p>
+      <section>
+        <p>Este parágrafo também está dentro da tag div.</p>
+        <!-- Descendente da tag div, mas não filho-->
+      </section>
+      <p>Este parágrafo também está dentro da tag div.</p>
+    </div>
+    <p>Este parágrafo não está dentro da tag div.</p>
+    <p>Este parágrafo também não está dentro da tag div.</p>
+  </body>
+</html>

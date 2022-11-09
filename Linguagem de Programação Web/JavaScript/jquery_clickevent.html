@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="jquery-3.6.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#frase1").hide();
+        $("#frase2").hide();
+        $("#botao1").click(function () {
+          $("#frase1").toggle();
+        });
+        $("#botao2").click(function () {
+          $("#frase2").toggle();
+        });
+      });
+    </script>
+    <title>Click Event</title>
+  </head>
+  <body>
+    <p id="frase1">BOOOOOOOOOOOM DIAAAAAAAAAAAAAAAAAAAA</p>
+    <p id="frase2">SILEeEeEeEeEeEeEeEeEeEeEeEeEeEeEeEeEeEeENCIO</p>
+    <button id="botao1">Demonstrar/Ocultar frase 1</button>
+    <button id="botao2">Demonstrar/Ocultar frase 2</button>
+  </body>
+</html>

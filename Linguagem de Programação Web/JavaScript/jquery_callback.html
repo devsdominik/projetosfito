@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="jquery-3.6.1.min.js"></script>
+    <script>
+    $(document).ready(function () {
+        $("#botao").click(function(){
+            $("#frase").hide("slow", function(){
+                alert("A frase está oculta")
+            });
+        });
+    });
+    </script>
+    <title>Callback</title>
+  </head>
+  <body>
+    <p id="frase">Está é uma uma frase com pouco conteúdo</p>
+    <button id="botao">Ocultar frase</button>
+  </body>
+</html>

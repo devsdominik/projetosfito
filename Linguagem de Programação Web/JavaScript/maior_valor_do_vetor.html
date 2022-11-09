@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <script type="text/javascript">
+      var vetor = new Array();
+      vetor[0] = 10;
+      vetor[1] = 15;
+      vetor[2] = 8;
+      vetor[3] = 17;
+      vetor[4] = 3;
+      var qtdeValores = vetor.length;
+      var i;
+      var maiorValor = vetor[0];
+      for (i = 1; i < qtdeValores; i++) {
+        if (maiorValor < vetor[i]) {
+          maiorValor = vetor[i];
+        }
+      }
+      document.write("O maior valor do vetor é = " + maiorValor);
+    </script>
+  </body>
+</html>
